@@ -1,19 +1,22 @@
 .div {
     background: linear-gradient(180deg, #26cdd3 3.6%, #fcb04d 89.1%);
-    max-height: 280vh;
+    max-height: 272vh;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     align-items: center;
+    max-width: 100%;
+
   }
+
   .div-2 {
     background-color: #fff;
     display: flex;
     width: 100%;
     align-items: center;
-    font-size: 32px;
+    font-size: 22px;
     color: #000;
     font-weight: 400;
     justify-content: center;
@@ -75,6 +78,8 @@
     background-color: #000;
     margin-top: 5px;
     height: 1px;
+    position: relative;
+    right: -20px;
   }
   .div-9 {
     font-family: Dongle, sans-serif;
@@ -100,7 +105,7 @@
     aspect-ratio: 100;
     object-fit: auto;
     object-position: center;
-    width: 303px;
+    width: 388.7px;
     stroke-width: 6px;
     stroke: #fff;
     border-color: rgba(255, 255, 255, 1);
@@ -130,7 +135,7 @@
     aspect-ratio: 100;
     object-fit: auto;
     object-position: center;
-    width: 303px;
+    width: 388.7px;
     stroke-width: 6px;
     stroke: #fff;
     border-color: rgba(255, 255, 255, 1);
@@ -156,7 +161,8 @@
     border-style: none;
     border-width: 1px;
     border-radius: 70px;
-    padding: 26px 60px 80px;
+    width: 1500px;
+    padding: 26px 0px 80px;
   }
   @media (max-width: 991px) {
     .div-12 {
@@ -224,12 +230,21 @@
     aspect-ratio: 1;
     object-fit: auto;
     object-position: center;
-    width: 90%;
+    position: relative;
+    right: 60%;
+    width: 55%;
+    top: 28px;
+    transition: all ease 0.3s;
+    position: absolute;
+    z-index: 2; /* Tetapkan z-index yang lebih tinggi untuk .img-11 */ 
   }
   .div-16 {
     font-family: Dongle, sans-serif;
     align-self: center;
     margin-top: 28px;
+    position: relative;
+    top: 95%;
+    right: 37%;
   }
   @media (max-width: 991px) {
     .div-16 {
@@ -291,10 +306,10 @@
     position: relative;
     top: -285px;
     min-height: 534px;
-    width: 100%;
+    width: 1500px;
     align-items: center;
-    border-radius: 155px;
-    padding: 40px 60px 80px;
+    border-radius: 90px;
+    padding: 40px 0px 80px;
   }
   @media (max-width: 991px) {
     .div-20 {
@@ -357,6 +372,7 @@
   .div-24 {
     align-self: center;
     font: 700 50px Dongle, sans-serif;
+
   }
   @media (max-width: 991px) {
     .div-24 {
@@ -386,6 +402,50 @@
       width: 100%;
     }
   }
+
+  
+  .img-back1 {
+    position: relative;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    width: 50px;
+    align-self: center;
+    margin: 0;
+    top: 70px;
+    left: -93px;
+    transition: all ease 0.3s;
+    z-index: 1; /* Tetapkan z-index yang lebih rendah untuk .img-back1 */
+  }
+
+  .img-back2 {
+    position: relative;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    width: 50px;
+    align-self: center;
+    margin: 0;
+    top: 70px;
+    right: -87px;
+    transition: all ease 0.3s;
+    z-index: 1; /* Tetapkan z-index yang lebih rendah untuk .img-back1 */
+  }
+
+  .img-back3 {
+    position: relative;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    width: 50px;
+    align-self: center;
+    margin: 0;
+    top: -44px;
+    right: -5px;
+    transition: all ease 0.3s;
+    z-index: 1; /* Tetapkan z-index yang lebih rendah untuk .img-back1 */
+  }
+
   .div-26 {
     position: relative;
     display: flex;
@@ -404,13 +464,52 @@
       white-space: initial;
     }
   }
+
+  .img-5:hover {
+    outline: 0;
+    transform: scale(1.5); /* Skala untuk img-11 saat dihover */
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+
+  .img-5:hover + .img-back1 {
+    transform: scale(5); /* Skala yang berbeda untuk img-back1 saat img-11 dihover */
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+  
+
+  .img-7:hover {
+    outline: 0;
+    transform: scale(1.5);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+
+  .img-7:hover + .img-back2 {
+    transform: scale(5); /* Skala yang berbeda untuk img-back1 saat img-11 dihover */
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+
+  .img-9:hover {
+    outline: 0;
+    transform: scale(1.5);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+
+  .img-9:hover + .img-back3 {
+    transform: scale(5); /* Skala yang berbeda untuk img-back1 saat img-11 dihover */
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+
   .img-7 {
     aspect-ratio: 1;
     object-fit: auto;
     object-position: center;
     position: relative;
-    right: -14%;
-    width: 70%;
+    right: 5%;
+    width: 40%;
+    top: 28px;
+    transition: all ease 0.3s;
+    position: absolute;
+    z-index: 2; /* Tetapkan z-index yang lebih tinggi untuk .img-11 */ 
 }
 
 .div-27 {
@@ -418,7 +517,8 @@ font-family: Dongle, sans-serif;
 align-self: center; /* Menyamakan posisi vertikal dengan foto */
 margin-top: 28px; /* Jarak atas dari foto */
 position: relative;
-top: -8%;
+top: 65%;
+right: -24%;
 }
 
 @media (max-width: 991px) {
@@ -439,7 +539,8 @@ font-size: 40px; /* Ukuran font tulisan di layar berukuran kecil */
     align-items: center;
     justify-content: center;
     border-radius: 155px;
-    padding: 75px 60px;
+    width: 1500px;
+    padding: 75px 0px;
   }
   @media (max-width: 991px) {
     .div-28 {
@@ -507,15 +608,19 @@ font-size: 40px; /* Ukuran font tulisan di layar berukuran kecil */
     object-fit: auto;
     object-position: center;
     position: relative;
-    right: -18%;
-    width: 65%;
+    right: 30%;
+    width: 40%;
+    top: -100px;
+    transition: all ease 0.3s;
+    position: absolute;
+    z-index: 2; /* Tetapkan z-index yang lebih tinggi untuk .img-11 */ 
   }
   .div-32 {
     font-family: Dongle, sans-serif;
     align-self: center;
     margin-top: 28px;
     position: relative;
-    top: -8%;
+    top: 3%;
   }
   @media (max-width: 991px) {
     .div-32 {
@@ -541,6 +646,7 @@ font-size: 40px; /* Ukuran font tulisan di layar berukuran kecil */
     flex-direction: column;
     color: #fff;
     text-align: center;
+    top: -96px;
   }
   @media (max-width: 991px) {
     .div-33 {
@@ -577,7 +683,7 @@ font-size: 40px; /* Ukuran font tulisan di layar berukuran kecil */
     width: 100%;
     flex-direction: column;
     align-items: center;
-    padding: 31px 60px 10px;
+    padding: 31px 0px 10px;
   }
   @media (max-width: 991px) {
     .div-36 {
