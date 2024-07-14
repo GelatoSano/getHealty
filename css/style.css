@@ -89,6 +89,8 @@
     background-color: #000;
     margin-top: 5px;
     height: 1px;
+    position: relative;
+    left: 20px;
   }
   .div-8 {
     font-family: "Dongle", sans-serif;
@@ -601,10 +603,10 @@
   }
  
 
-  .img-11,
-  .img-12,
+
   .img-13 {
     position: relative;
+    left: 958px;
     aspect-ratio: 1;
     object-fit: cover;
     object-position: center;
@@ -616,7 +618,34 @@
     z-index: 2; /* Tetapkan z-index yang lebih tinggi untuk .img-11 */ 
 
   }
+  .img-11{
+    position: relative;
+    left: 279px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    width: 120px;
+    align-self: center;
+    margin: 0;
+    transition: all ease 0.3s;
+    position: absolute;
+    z-index: 2; /* Tetapkan z-index yang lebih tinggi untuk .img-11 */ 
 
+  }
+  .img-12{
+    position: relative;
+    left: 620px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    width: 120px;
+    align-self: center;
+    margin: 0;
+    transition: all ease 0.3s;
+    position: absolute;
+    z-index: 2; /* Tetapkan z-index yang lebih tinggi untuk .img-11 */ 
+
+  }
 
   @media (max-width: 991px) {
     .img-11,
