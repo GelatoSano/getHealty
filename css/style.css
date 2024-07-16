@@ -666,19 +666,19 @@
 }
 @media (max-width: 1200px) {
   .img-11 {
-    left: 17%;
+    position: static;
   }
 }
 
 @media (max-width: 1200px) {
   .img-12 {
-    left: 45.7%;
+    position: static;
   }
 }
 
 @media (max-width: 1200px) {
   .img-13 {
-    left: 75.2%;
+    position: static;
   }
 }
 
