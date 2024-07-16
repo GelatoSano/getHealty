@@ -588,6 +588,7 @@
     margin-top: 20px; /* Adjust as needed */
     font-size: 40px; /* Adjust as needed */
     white-space: initial;
+    max-width: 100%;
   }
 }
 
@@ -630,13 +631,17 @@
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
+.img-11,
+.img-12,
 .img-13 {
-  position: relative;
-  left: 958px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  position: absolute;
   aspect-ratio: 1;
   object-fit: cover;
   object-position: center;
-  width: 120px;
+  max-width: 9%;
   align-self: center;
   margin: 0;
   transition: all ease 0.3s;
@@ -644,37 +649,47 @@
   z-index: 2; /* Tetapkan z-index yang lebih tinggi untuk .img-11 */
 }
 .img-11 {
-  position: relative;
-  left: 285px;
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: center;
-  width: 120px;
-  align-self: center;
-  margin: 0;
-  transition: all ease 0.3s;
-  position: absolute;
-  z-index: 2; /* Tetapkan z-index yang lebih tinggi untuk .img-11 */
+  left: 21%;
 }
 .img-12 {
-  position: relative;
-  left: 619px;
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: center;
-  width: 120px;
-  align-self: center;
-  margin: 0;
-  transition: all ease 0.3s;
-  position: absolute;
-  z-index: 2; /* Tetapkan z-index yang lebih tinggi untuk .img-11 */
+  left: 45.8%;
+}
+.img-13 {
+  left: 71%;
+}
+@media (max-width: 1200px) {
+  .img-11,
+  .img-12,
+  .img-13 {
+    max-width: 9.5%; /* Adjust max-width for larger screens */
+  }
+}
+@media (max-width: 1200px) {
+  .img-11 {
+    left: 17%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .img-12 {
+    left: 45.7%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .img-13 {
+    left: 75.2%;
+  }
 }
 
 @media (max-width: 991px) {
   .img-11,
   .img-12,
   .img-13 {
+    position: static;
     max-width: 100%;
+    transform: scale(-0.8); /* Sesuaikan scaling jika diperlukan */
+    margin: 10px auto;
   }
 }
 
