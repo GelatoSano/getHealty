@@ -572,6 +572,8 @@
 .div-33,
 .div-35 {
   display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   margin-top: 10px; /* Adjust as needed */
   flex-grow: 1;
   flex-direction: column;
@@ -634,51 +636,33 @@
 .img-11,
 .img-12,
 .img-13 {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  position: absolute;
+  display: block;
   aspect-ratio: 1;
   object-fit: cover;
   object-position: center;
   max-width: 9%;
   align-self: center;
-  margin: 0;
   transition: all ease 0.3s;
   position: absolute;
   z-index: 2; /* Tetapkan z-index yang lebih tinggi untuk .img-11 */
 }
 .img-11 {
-  left: 21%;
+  margin: -25px;
+  margin-top: 0px;
 }
 .img-12 {
-  left: 45.8%;
+  margin: -35px;
+  margin-top: 0px;
 }
 .img-13 {
-  left: 71%;
+  margin: -35px;
+  margin-top: 0px;
 }
 @media (max-width: 1200px) {
   .img-11,
   .img-12,
   .img-13 {
     max-width: 9.5%; /* Adjust max-width for larger screens */
-  }
-}
-@media (max-width: 1200px) {
-  .img-11 {
-    position: static;
-  }
-}
-
-@media (max-width: 1200px) {
-  .img-12 {
-    position: static;
-  }
-}
-
-@media (max-width: 1200px) {
-  .img-13 {
-    position: static;
   }
 }
 
@@ -689,6 +673,16 @@
     position: static;
     max-width: 100%;
     transform: scale(-0.8); /* Sesuaikan scaling jika diperlukan */
+    margin: 10px auto;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-11,
+  .img-12,
+  .img-13 {
+    max-width: 100%;
     margin: 10px auto;
   }
 }
